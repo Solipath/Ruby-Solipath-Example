@@ -1,10 +1,7 @@
-# Solipath .Net C# example project
-This is a quick showcase of using Solipath for a C# project
+Ruby example project
+This is a quick showcase of using Solipath for a Ruby project
 
-To run tests on powershell
-```powershell
-.\solipath.bat dotnet test
-```
+This doesn't yet work for windows, while there is a download that technically should work, I need to add the ability to extract 7z files, which isn't available as a library for Rust yet. I'll be exploring some options to hopefully solve this quickly.
 
 To run tests on bash
 ```bash
