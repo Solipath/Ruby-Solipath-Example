@@ -17,6 +17,8 @@ jobs:
             command: ./solipath rake
           - os: ubuntu-latest
             command: ./solipath rake
+          - os: windows-latest
+            command: .\solipath rake
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
