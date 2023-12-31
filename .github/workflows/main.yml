@@ -14,12 +14,14 @@ jobs:
       matrix:
         include:
           - os: macos-latest
-            command: ./solipath rake
+            solipathCommand: ./solipath
           - os: ubuntu-latest
-            command: ./solipath rake
+            solipathCommand: ./solipath
           - os: windows-latest
-            command: .\solipath rake
+            solipathCommand: .\solipath
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
-      run: ${{matrix.command}}
+      run: |
+        ${{matrix.solipathCommand}} bundler install
+        ${{matrix.solipathCommand}} bundle exec rake

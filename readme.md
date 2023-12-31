@@ -1,9 +1,14 @@
 # Ruby example project
 This is a quick showcase of using Solipath for a Ruby project
 
+To install Gemfile dependencies on bash
+```bash
+./solipath bundler install
+```
+
 To run tests on bash
 ```bash
-./solipath rake
+./solipath bundle exec rake
 ```
 
 This project includes vscode as a dependency in solipath_vscode/solipath.json so you can start it from the command line.
